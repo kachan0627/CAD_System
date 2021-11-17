@@ -1,0 +1,56 @@
+﻿2017/12/14 16:02:50 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\sumiya\Desktop\WinOGL（最終発表）\WinOGL\WinOGL.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\WinOGL.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\WinOGL.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ACDraw.cpp ACMath.cpp AdminControl.cpp DChangeHigh.cpp DColor.cpp MainFrm.cpp Shape.cpp Triangle.cpp Vector.cpp Vertex.cpp WinOGL.cpp WinOGLDoc.cpp WinOGLView.cpp
+         ACDraw.cpp
+     1>ACDraw.cpp(16): warning C4305: '引数' : 'double' から 'GLfloat' へ切り詰めます。
+     1>ACDraw.cpp(302): warning C4244: '引数' : 'double' から 'float' への変換です。データが失われる可能性があります。
+     1>ACDraw.cpp(306): warning C4244: '=' : 'int' から 'float' への変換です。データが失われる可能性があります。
+     1>ACDraw.cpp(379): warning C4244: '=' : 'int' から 'float' への変換です。データが失われる可能性があります。
+         ACMath.cpp
+         AdminControl.cpp
+     1>AdminControl.cpp(131): warning C4305: '引数' : 'double' から 'GLfloat' へ切り詰めます。
+     1>AdminControl.cpp(146): warning C4305: '引数' : 'double' から 'GLfloat' へ切り詰めます。
+     1>AdminControl.cpp(168): warning C4305: '引数' : 'double' から 'GLfloat' へ切り詰めます。
+     1>AdminControl.cpp(210): warning C4305: '=' : 'double' から 'float' へ切り詰めます。
+     1>AdminControl.cpp(211): warning C4305: '=' : 'double' から 'float' へ切り詰めます。
+     1>AdminControl.cpp(212): warning C4305: '=' : 'double' から 'float' へ切り詰めます。
+     1>AdminControl.cpp(906): warning C4244: '=' : 'int' から 'float' への変換です。データが失われる可能性があります。
+     1>AdminControl.cpp(965): warning C4244: '=' : 'int' から 'float' への変換です。データが失われる可能性があります。
+     1>AdminControl.cpp(1084): warning C4244: '=' : 'int' から 'float' への変換です。データが失われる可能性があります。
+     1>AdminControl.cpp(1113): warning C4305: '引数' : 'double' から 'float' へ切り詰めます。
+     1>AdminControl.cpp(1252): warning C4244: '=' : 'int' から 'float' への変換です。データが失われる可能性があります。
+     1>AdminControl.cpp(1290): warning C4244: '=' : 'int' から 'float' への変換です。データが失われる可能性があります。
+     1>AdminControl.cpp(1339): warning C4244: '=' : 'int' から 'float' への変換です。データが失われる可能性があります。
+     1>AdminControl.cpp(1524): warning C4101: 'MinY' : ローカル変数は 1 度も使われていません。
+     1>AdminControl.cpp(1524): warning C4101: 'MaxX' : ローカル変数は 1 度も使われていません。
+     1>AdminControl.cpp(1524): warning C4101: 'MinX' : ローカル変数は 1 度も使われていません。
+     1>AdminControl.cpp(1524): warning C4101: 'MaxY' : ローカル変数は 1 度も使われていません。
+     1>AdminControl.cpp(1616): warning C4305: '=' : 'double' から 'float' へ切り詰めます。
+     1>AdminControl.cpp(1619): warning C4305: '=' : 'double' から 'float' へ切り詰めます。
+     1>AdminControl.cpp(1625): warning C4244: '=' : 'double' から 'float' への変換です。データが失われる可能性があります。
+     1>AdminControl.cpp(1629): warning C4244: '=' : 'double' から 'float' への変換です。データが失われる可能性があります。
+     1>AdminControl.cpp(1636): warning C4244: '=' : 'int' から 'float' への変換です。データが失われる可能性があります。
+         DChangeHigh.cpp
+     1>DChangeHigh.cpp(85): warning C4305: '=' : 'double' から 'float' へ切り詰めます。
+         DColor.cpp
+         MainFrm.cpp
+         Shape.cpp
+         Triangle.cpp
+         Vector.cpp
+         Vertex.cpp
+         WinOGL.cpp
+         WinOGLDoc.cpp
+         WinOGLView.cpp
+     1>WinOGLView.cpp(546): warning C4305: '引数' : 'double' から 'float' へ切り詰めます。
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0411" /IRelease\ /nologo /fo"Release\WinOGL.res" WinOGL.rc 
+     1>WinOGL.rc(79): error RC2170: bitmap file res\Toolbar.bmp is not in 3.00 format
+         
+     1>プロジェクト "C:\Users\sumiya\Desktop\WinOGL（最終発表）\WinOGL\WinOGL.vcxproj" (Build ターゲット) のビルドが終了しました -- 失敗。
+
+ビルドに失敗しました。
+
+経過時間 00:00:04.30

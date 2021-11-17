@@ -1,0 +1,45 @@
+﻿2016/01/14 15:38:05 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\e1c13109\Desktop\WinOGL\WinOGL\WinOGL.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\WinOGL.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ACDraw.cpp ACMath.cpp AdminControl.cpp Shape.cpp Vector.cpp WinOGL.cpp WinOGLView.cpp
+         ACDraw.cpp
+         ACMath.cpp
+         AdminControl.cpp
+     1>AdminControl.cpp(376): warning C4244: '=' : 'double' から 'float' への変換です。データが失われる可能性があります。
+     1>AdminControl.cpp(690): warning C4244: '=' : 'int' から 'float' への変換です。データが失われる可能性があります。
+     1>AdminControl.cpp(749): warning C4244: '=' : 'int' から 'float' への変換です。データが失われる可能性があります。
+     1>AdminControl.cpp(868): warning C4244: '=' : 'int' から 'float' への変換です。データが失われる可能性があります。
+     1>AdminControl.cpp(897): warning C4305: '引数' : 'double' から 'float' へ切り詰めます。
+     1>AdminControl.cpp(1036): warning C4244: '=' : 'int' から 'float' への変換です。データが失われる可能性があります。
+     1>AdminControl.cpp(1074): warning C4244: '=' : 'int' から 'float' への変換です。データが失われる可能性があります。
+     1>AdminControl.cpp(1123): warning C4244: '=' : 'int' から 'float' への変換です。データが失われる可能性があります。
+     1>AdminControl.cpp(1253): warning C4101: 'MinY' : ローカル変数は 1 度も使われていません。
+     1>AdminControl.cpp(1253): warning C4101: 'MaxX' : ローカル変数は 1 度も使われていません。
+     1>AdminControl.cpp(1253): warning C4101: 'MinX' : ローカル変数は 1 度も使われていません。
+     1>AdminControl.cpp(1253): warning C4101: 'MaxY' : ローカル変数は 1 度も使われていません。
+         Shape.cpp
+         Vector.cpp
+         WinOGL.cpp
+         WinOGLView.cpp
+     1>WinOGLView.cpp(424): warning C4305: '引数' : 'double' から 'float' へ切り詰めます。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\e1c13109\Desktop\WinOGL\Release\WinOGL.exe" /INCREMENTAL:NO /NOLOGO OpenGL32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\e1c13109\Desktop\WinOGL\Release\WinOGL.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\e1c13109\Desktop\WinOGL\Release\WinOGL.lib" /MACHINE:X86 /SAFESEH Release\WinOGL.res
+         Release\ACDraw.obj
+         Release\ACMath.obj
+         Release\AdminControl.obj
+         Release\MainFrm.obj
+         Release\Shape.obj
+         Release\stdafx.obj
+         Release\Vector.obj
+         Release\Vertex.obj
+         Release\WinOGL.obj
+         Release\WinOGLDoc.obj
+         Release\WinOGLView.obj
+         コード生成しています。
+         コード生成が終了しました。
+         WinOGL.vcxproj -> C:\Users\e1c13109\Desktop\WinOGL\Release\WinOGL.exe
+     1>プロジェクト "C:\Users\e1c13109\Desktop\WinOGL\WinOGL\WinOGL.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:02.28

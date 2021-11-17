@@ -1,0 +1,501 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#include ""res\\WinOGL.rc2""  // Microsoft Visual C++ 以外で編集されたリソース\r\n"
+    "#include ""l.JPN\\afxres.rc""      // 標準コンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\WinOGL.ico"
+IDR_WinOGLTYPE          ICON                    "res\\WinOGLDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_StartDraw
+    BUTTON      ID_change
+    BUTTON      ID_AppendPoint
+    BUTTON      ID_DeletePoint
+    BUTTON      ID_ShapeChange
+    BUTTON      ID_ShapeTurn
+    BUTTON      ID_Color
+    SEPARATOR
+    BUTTON      ID_WatchMove
+    BUTTON      ID_WatchTurn
+    SEPARATOR
+    BUTTON      ID_MakeSurface
+    BUTTON      ID_XYZ
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "切り取り(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "コピー(&C)\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "形状作成",                        ID_StartDraw
+        MENUITEM "移動",                          ID_change
+        POPUP "点の編集"
+        BEGIN
+            MENUITEM "追加",                          ID_AppendPoint
+            MENUITEM "削除",                          ID_DeletePoint
+        END
+        POPUP "図形の編集"
+        BEGIN
+            MENUITEM "拡大・縮小",                       ID_ShapeChange
+            MENUITEM "回転",                          ID_ShapeTurn
+        END
+        MENUITEM "色の編集",                        ID_Color
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+        POPUP "視点変更"
+        BEGIN
+            MENUITEM "移動",                          ID_WatchMove
+            MENUITEM "回転",                          ID_WatchTurn
+        END
+        MENUITEM "面",                           ID_MakeSurface
+        MENUITEM "XYZ軸",                        ID_XYZ
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "バージョン情報 WinOGL(&A)...",       ID_APP_ABOUT
+    END
+END
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "x軸（赤）",                       ID__TurnX
+        MENUITEM "y軸（緑）",                       ID__TurnY
+        MENUITEM "z軸（青）",                       ID__TurnZ
+        MENUITEM "厚みの設定",                       ID__High
+    END
+END
+
+IDR_MENU2 MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "点のみ選択",                       ID__VertexDel
+        MENUITEM "図形のみ選択",                      ID__ShapeDel
+        MENUITEM "両方選択",                        ID__BothDel
+        MENUITEM "全削除",                         ID__ALLdel
+    END
+END
+
+IDR_MENU3 MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "全削除",                         ID__ALLdel
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "バージョン情報 WinOGL"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "WinOGL, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2015",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DColor DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "色編集"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,155,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,252,155,50,14
+    SCROLLBAR       IDC_SRed,36,84,239,11
+    SCROLLBAR       IDC_SGreen,36,108,239,11
+    SCROLLBAR       IDC_SBlue,36,132,239,11
+    LTEXT           "赤",IDC_STATIC,19,84,12,12
+    LTEXT           "青",IDC_STATIC,19,134,12,12
+    LTEXT           "緑",IDC_STATIC,19,109,12,12
+    CONTROL         "",IDC_PICT,"Static",SS_WHITERECT | WS_BORDER,43,28,214,33
+    LTEXT           "0",IDC_STATIC,51,74,14,9
+    LTEXT           "1",IDC_STATIC,256,74,12,11
+END
+
+IDD_ChangeHigh DIALOGEX 0, 0, 249, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "厚みの設定"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,140,62,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,192,62,50,14
+    SCROLLBAR       IDC_SCROLLBAR1,18,37,210,9
+    LTEXT           "薄い",IDC_STATIC,25,23,19,12
+    LTEXT           "厚い",IDC_STATIC,205,23,19,12
+    PUSHBUTTON      "初期値化",IDC_BUTTON1,7,62,49,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <会社名>"
+            VALUE "FileDescription", "WinOGL"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "WinOGL.exe"
+            VALUE "LegalCopyright", "TODO: (C) <会社名>.  All rights reserved."
+            VALUE "OriginalFilename", "WinOGL.exe"
+            VALUE "ProductName", "TODO: <製品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DColor, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_ChangeHigh, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 242
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "WinOGL\n\nWinOGL\n\n\nWinOGL.Document\nWinOGL.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "WinOGL"
+    AFX_IDS_IDLEMESSAGE     "レディ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "新規にファイルを作成\n新規ファイル"
+    ID_FILE_OPEN            "既存のファイルを開く\n開く"
+    ID_FILE_CLOSE           "作業中のファイルを閉じる\n閉じる"
+    ID_FILE_SAVE            "作業中のファイルを上書きして保存\n保存"
+    ID_FILE_SAVE_AS         "作業中のファイルを新しい名前で保存\n名前をつけて保存"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "指定のファイルを開く"
+    ID_FILE_MRU_FILE2       "指定のファイルを開く"
+    ID_FILE_MRU_FILE3       "指定のファイルを開く"
+    ID_FILE_MRU_FILE4       "指定のファイルを開く"
+    ID_FILE_MRU_FILE5       "指定のファイルを開く"
+    ID_FILE_MRU_FILE6       "指定のファイルを開く"
+    ID_FILE_MRU_FILE7       "指定のファイルを開く"
+    ID_FILE_MRU_FILE8       "指定のファイルを開く"
+    ID_FILE_MRU_FILE9       "指定のファイルを開く"
+    ID_FILE_MRU_FILE10      "指定のファイルを開く"
+    ID_FILE_MRU_FILE11      "指定のファイルを開く"
+    ID_FILE_MRU_FILE12      "指定のファイルを開く"
+    ID_FILE_MRU_FILE13      "指定のファイルを開く"
+    ID_FILE_MRU_FILE14      "指定のファイルを開く"
+    ID_FILE_MRU_FILE15      "指定のファイルを開く"
+    ID_FILE_MRU_FILE16      "指定のファイルを開く"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "次のウィンドウに切り替える\n次のペイン"
+    ID_PREV_PANE            "前のウィンドウに切り替える\n前のペイン"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "作業中のウィンドウを分割\n分割"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "選択範囲を消去\n消去"
+    ID_EDIT_CLEAR_ALL       "すべて消去\nすべて消去"
+    ID_EDIT_COPY            "選択範囲をコピーしてクリップボードに保存\nコピー"
+    ID_EDIT_CUT             "選択範囲を切り取ってクリップボードに保存\n切り取り"
+    ID_EDIT_FIND            "指定した文字列の検索\n検索"
+    ID_EDIT_PASTE           "クリップボードの内容を貼り付け\n貼り付け"
+    ID_EDIT_REPEAT          "直前に行った動作を繰り返す\n繰り返し"
+    ID_EDIT_REPLACE         "指定した文字列を他の文字列で置換\n置換"
+    ID_EDIT_SELECT_ALL      "ファイル内のすべてを選択\nすべて選択"
+    ID_EDIT_UNDO            "直前に行った動作を元に戻す\n元に戻す"
+    ID_EDIT_REDO            "取り消した操作をやり直す\nやり直す"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "ツール バーの 表示/非表示\nツール バーの表示切り替え"
+    ID_VIEW_STATUS_BAR      "ステータス バーの表示/非表示\nステータス バーの表示切り替え"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "ウィンドウのサイズを変更"
+    AFX_IDS_SCMOVE          "ウィンドウの位置を変更"
+    AFX_IDS_SCMINIMIZE      "ウィンドウを最小化する"
+    AFX_IDS_SCMAXIMIZE      "ウィンドウを最大化する"
+    AFX_IDS_SCNEXTWINDOW    "次のウィンドウに切り替える"
+    AFX_IDS_SCPREVWINDOW    "前のウィンドウに切り替える"
+    AFX_IDS_SCCLOSE         "作業中のウィンドウを閉じ、変更したファイルの保存を指示"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "ウィンドウを通常のサイズに戻す"
+    AFX_IDS_SCTASKLIST      "タスク一覧をアクティブにする"
+END
+
+STRINGTABLE
+BEGIN
+    ID_DeletePoint          "点を削除する\n点の削除"
+    ID_StartDraw            "新しく図形を作成する\n形状作成"
+    ID_ShapeChange          "図形を拡大または縮小する\n図形の拡大・縮小"
+    ID_ShapeTurn            "図形を回転する\n図形の回転"
+END
+
+STRINGTABLE
+BEGIN
+    ID_change               "点または図形を移動する\n移動"
+    ID_AppendPoint          "点を追加する\n点の追加"
+END
+
+STRINGTABLE
+BEGIN
+    ID_XYZ                  "XYZ軸を表示する\nXYZ軸の表示"
+    ID_MakeSurface          "面を表示する\n面の表示"
+    ID_WatchMove            "視点を移動する（Enterキーで初期位置に戻る）\n視点変更（移動）"
+    ID_WatchTurn            "視点を回転する（右クリックで回転軸の変更、Enterキーで初期位置に戻る）\n視点変更（回転）"
+END
+
+STRINGTABLE
+BEGIN
+    ID_Color                "形状の色を変更する\n色の編集"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#include "res\WinOGL.rc2"  // Microsoft Visual C++ 以外で編集されたリソース
+#include "l.JPN\afxres.rc"      // 標準コンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
